@@ -508,7 +508,7 @@ You can also set a custom layout for a terminal.
       lazygit:toggle()
     end
     
-    vim.api.nvim_set_keymap("n", "<leader>g", "<cmd>lua _lazygit_toggle()<CR>", {noremap = true, silent = true})
+    vim.api.nvim_set_keymap({ "n", "t" }, "<leader>g", "<cmd>lua _lazygit_toggle()<CR>", {noremap = true, silent = true})
 <
 
 **WARNING**do not use any of the private functionality of the terminal or other
